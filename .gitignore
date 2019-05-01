@@ -1,0 +1,11 @@
+#Translations
+
+.DS_Store
+
+#Local data
+
+*.csv
+
+#Checkpoints
+
+.ipynb_checkpoints
