@@ -9,7 +9,7 @@ With fewer park employees than there are parks in St. Louis, corners get cut
 What is this?
 -------------
 
-This repo contains data and code used for the May 4, 2019 St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". The story was reported by [Jesse Bogan](https://twitter.com/JesseBogan) with data analysis done by [Janelle O'Dea](https://twitter.com/jayohday). 
+This repo contains data and code used for the May 4 (online) and May 5, 2019 (print) St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". The story was reported by [Jesse Bogan](https://twitter.com/JesseBogan) with data analysis done by [Janelle O'Dea](https://twitter.com/jayohday). 
 
 Assumptions
 -----------
