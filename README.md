@@ -9,7 +9,7 @@ parks
 What is this?
 -------------
 
-This repo contains data and code used for the "With fewer park employees than there are parks in St. Louis, corners get cut" Post-Dispatch story by Jesse Bogan
+This repo contains data and code used for the May 4, 2019 St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". 
 
 Assumptions
 -----------
@@ -22,6 +22,7 @@ The following things are assumed to be true in this documentation.
 
 How to reproduce
 -------------
+To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python. You'll need the libraries as specified in the `requirements.txt` file in order to run the code in the [Jupyter Notebook](https://jupyter.org/) file. To install the libraries, turn on your virtual environment, change into the `parks` directory and run the Terminal command `pip install -r requirements.txt`. 
 
 Data caveats
 -------------
