@@ -1,4 +1,4 @@
-Tk title
+With fewer park employees than there are parks in St. Louis, corners get cut
 ========================
 
 * [What is this?](#what-is-this)
@@ -9,7 +9,7 @@ Tk title
 What is this?
 -------------
 
-This repo contains data and code used for the May 4, 2019 St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". 
+This repo contains data and code used for the May 4, 2019 St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". The story was reported by [Jesse Bogan](https://twitter.com/JesseBogan) with data analysis done by [Janelle O'Dea](https://twitter.com/jayohday). 
 
 Assumptions
 -----------
@@ -22,13 +22,21 @@ The following things are assumed to be true in this documentation.
 
 How to reproduce
 -------------
-To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python. You'll need the libraries as specified in the `requirements.txt` file in order to run the code in the [Jupyter Notebook](https://jupyter.org/) file. To install the libraries, turn on your virtual environment, change into the `parks` directory and run the Terminal command `pip install -r requirements.txt`. filtering and sorting - put byline somewhere for analysis
+To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python. 
+
+You'll need the libraries as specified in the `requirements.txt` file. To install the libraries, turn on your virtual environment, change into the `parks` directory and run the Terminal command `pip install -r requirements.txt`. 
+
+The code in the Jupyter Notebook file shows the filtering and sorting done to extract the data reported in the story.
+
+To see how we arrived at the data, run the code in the [Jupyter Notebook](https://jupyter.org/) file. 
 
 Data caveats
 -------------
 The `Archive.zip` file contains the data used for this analysis, as downloaded from the city of St. Louis Open Data portal https://www.stlouis-mo.gov/data/service-requests.cfm#CP_JUMP_632762 under the "Service Requests" link on April 30, 2019. 
 
 The data reflect complaints submitted by residents of the city of St. Louis by phone, web, email or Twitter. Each row reflects one complaint. 
+
+The data dictionary can be found at the same Open Data portal link above, under the "Service Request Field Definitions" link.
 
 The complaint data reflects only what's reported to the city. Other issues at parks may exist and nobody calls them in. 
 
