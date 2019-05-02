@@ -32,7 +32,7 @@ To see how we arrived at the data, run the code in the [Jupyter Notebook](https:
 
 Data caveats
 -------------
-The `Archive.zip` file contains the data used for this analysis, as downloaded from the city of St. Louis Open Data portal https://www.stlouis-mo.gov/data/service-requests.cfm#CP_JUMP_632762 under the "Service Requests" link on April 30, 2019. 
+The `Archive.zip` file contains the data used for this analysis, as downloaded on April 30, 2019 from the city of St. Louis Open Data portal https://www.stlouis-mo.gov/data/service-requests.cfm#CP_JUMP_632762 under the "Service Requests" link. 
 
 The data reflect complaints submitted by residents of the city of St. Louis by phone, web, email or Twitter. Each row reflects one complaint. 
 
