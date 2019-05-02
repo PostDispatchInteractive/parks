@@ -24,11 +24,11 @@ How to reproduce
 -------------
 To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python. 
 
-You'll need the libraries as specified in the `requirements.txt` file. To install the libraries, turn on your virtual environment, change into the `parks` directory and run the Terminal command `pip install -r requirements.txt`. 
+You'll need the libraries as specified in the `requirements.txt` file. To install the libraries, change into the `parks` directory, turn on your virtual environment and run the Terminal command `pip install -r requirements.txt`. 
 
-The code in the Jupyter Notebook file shows the filtering and sorting done to extract the data reported in the story.
+Extract the data from the `.zip` file.
 
-To see how we arrived at the data, run the code in the [Jupyter Notebook](https://jupyter.org/) file. 
+The code in the Jupyter Notebook file shows the filtering and sorting that was done to get the data points reported in the story. To see how we arrived at the data, run the code in the [Jupyter Notebook](https://jupyter.org/) file `parks.ipynb`. 
 
 Data caveats
 -------------
