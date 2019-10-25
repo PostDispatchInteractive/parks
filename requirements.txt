@@ -158,7 +158,7 @@ unicodecsv==0.14.1
 Unidecode==0.4.21
 uritemplate==3.0.0
 uritemplate.py==3.0.2
-urllib3==1.22
+urllib3==1.24.2
 virtualenv==16.0.0
 virtualenv-clone==0.3.0
 virtualenvwrapper==4.8.2
