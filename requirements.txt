@@ -112,7 +112,7 @@ pyasn1==0.1.7
 pyasn1-modules==0.2.1
 pycparser==2.18
 pycrypto==2.6.1
-Pygments==2.2.0
+Pygments==2.7.4
 pyhacrf-datamade==0.2.1
 PyLBFGS==0.2.0.5
 pyodbc==4.0.25
