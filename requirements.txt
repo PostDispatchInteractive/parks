@@ -165,7 +165,7 @@ virtualenvwrapper==4.8.2
 wcwidth==0.1.7
 webencodings==0.5.1
 webstack-django-sorting==0.4.3
-Werkzeug==0.8.3
+Werkzeug==0.15.3
 widgetsnbextension==3.0.6
 xlrd==1.1.0
 zope.index==4.3.0
