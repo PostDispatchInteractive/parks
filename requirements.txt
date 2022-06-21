@@ -89,7 +89,7 @@ nbformat==4.4.0
 nltk==3.2.5
 nose==1.2.1
 notebook==5.2.1
-numpy==1.14.0
+numpy==1.22.0
 oauth2client==1.5.2
 oauthlib==2.0.4
 odict==1.5.1
