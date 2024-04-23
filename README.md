@@ -9,35 +9,46 @@ With fewer park employees than there are parks in St. Louis, corners get cut
 What is this?
 -------------
 
-This repo contains data and code used for the May 4 (online) and May 5, 2019 (print) St. Louis Post-Dispatch story "With fewer park employees than there are parks in St. Louis, corners get cut". The story was reported by [Jesse Bogan](https://twitter.com/JesseBogan) with data analysis done by [Janelle O'Dea](https://twitter.com/jayohday). 
+This repo contains data and code used for the May 4 (online) and May 5, 2019 (print) St. Louis Post-Dispatch story ["With fewer park employees than there are parks in St. Louis, corners get cut"](https://www.stltoday.com/news/local/metro/with-fewer-park-employees-than-there-are-parks-in-st-louis-corners-get-cut/article_18f11107-fec2-5e03-b5f9-85568ce2c9ed.html). The story was reported by [Jesse Bogan](https://twitter.com/JesseBogan) with data analysis done by [Janelle O'Dea](https://twitter.com/jayohday).
+
+The instructions below will enable you to reproduce the results of our data analysis on your own computer. You can also see a [static version of our code and results](https://html-preview.github.io/?url=https://github.com/PostDispatchInteractive/parks/blob/master/parks.html) if you would rather avoid installing libraries and using Python.
 
 Assumptions
 -----------
 
 The following things are assumed to be true in this documentation.
 
-* You are running OSX.
-* You are using Python 2.7. (Probably the version that came OSX.)
+* You are using Python 3.8 or higher.
 * You have [virtualenv](https://pypi.python.org/pypi/virtualenv) and [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper) installed and working.
 
 How to reproduce
--------------
-To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python. 
+----------------
 
-You'll need the libraries as specified in the `requirements.txt` file. To install the libraries, change into the `parks` directory, turn on your virtual environment and run the Terminal command `pip install -r requirements.txt`. 
+To reproduce this data analysis, you'll need a working knowledge of virtual environments and Python.
 
-Extract the data from the `.zip` file.
+First, enter the following commands on the command line to create a virtual environment and install the required libraries:
+```
+mkvirtualenv parks --python=python3
+pip install -r requirements.txt
+```
 
-The code in the Jupyter Notebook file shows the filtering and sorting that was done to get the data points reported in the story. To see how we arrived at the data, run the code in the [Jupyter Notebook](https://jupyter.org/) file `parks.ipynb`. 
+Next, extract the CSV files from the `Archive.zip` file. (Note: If the files don't automatically extract into a subfolder called `Archive`, then you should create that subfolder and move the CSVs into it.)
+
+Finally, it's time to open the [Jupyter Notebook](https://jupyter.org/) file `parks.ipynb`, which shows the filtering and sorting we did to calculate the data points reported in the story. You can open the notebook with the following command, which should open a new window in your browser:
+```
+jupyter notebook parks.ipynb
+```
+
 
 Data caveats
 -------------
-The `Archive.zip` file contains the data used for this analysis, as downloaded on April 30, 2019 from the city of St. Louis Open Data portal https://www.stlouis-mo.gov/data/service-requests.cfm#CP_JUMP_632762 under the "Service Requests" link. 
 
-The data reflect complaints submitted by residents of the city of St. Louis by phone, web, email or Twitter. Each row reflects one complaint. 
+The `Archive.zip` file contains the data used for this analysis, as downloaded on April 30, 2019 from the [Service Requests Dataset Distribution](https://www.stlouis-mo.gov/data/datasets/distribution.cfm?id=2) page on the St. Louis Open Data portal.
 
-The data dictionary can be found at the same Open Data portal link above, under the "Service Request Field Definitions" link.
+The data reflect complaints submitted by St. Louis city residents by phone, web, email or Twitter. Each row reflects one complaint.
 
-The complaint data reflects only what's reported to the city. Other issues at parks may exist and nobody calls them in. 
+The data dictionary can be found at the same Open Data portal link above, under the heading "Field Definitions."
 
-There is a unique identifier for each complaint, `REQUESTID`. There is not a unique identifier for who reported the complaint. Therefore, it's not possible to know if the same person made all of the complaints about a particular park or a number of different people did. 
+The complaint data reflects only what has been reported to the city. Other issues at parks may exist and nobody calls them in.
+
+There is a unique identifier for each complaint, `REQUESTID`, but there is not a unique identifier for the person who reported the complaint. So, it's not possible to know if the same person made all of the complaints about a particular park or if various people did.
